@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }   
+
+      body {
+        margin: 1;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #eef2ff, #dbeafe);
+        color: #1f2937;
+      }
+
+      .login-card {
+        width: min(90vw, 420px);
+        background: #ffffff;
+        border-radius: 16px;
+        box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+        padding: 32px 28px;
+      }
+
+      h1 {
+        margin: 0 0 24px;
+        text-align: center;
+        font-size: 2rem;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      label {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        font-weight: 600;
+      }
+
+      input {
+        width: 100%;
+        padding: 12px 14px;
+        border: 1px solid #cbd5e1;
+        border-radius: 10px;
+        font-size: 1rem;
+      }
+
+      input:focus {
+        outline: 2px solid #60a5fa;
+        border-color: transparent;
+      }
+
+      button {
+        border: none;
+        border-radius: 10px;
+        padding: 12px 16px;
+        background: #2563eb;
+        color: #ffffff;
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition: background 0.2s ease;
+      }
+
+      button:hover {
+        background: #1d4ed8;
+      }
+
+      .footer-text {
+        margin-top: 18px;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #475569;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="login-card">
+      <h1>Login</h1>
+
+      <form action="#" method="post">
+        <label for="username">
+          Username
+          <input id="username" name="username" type="text" placeholder="Enter your username" required />
+        </label>
+
+        <label for="password">
+          Password
+          <input id="password" name="password" type="password" placeholder="Enter your password" required />
+        </label>
+
+        <button type="submit">Sign In</button>
+      </form>
+
+      <p class="footer-text">Forgot your password? <a href="#">Reset it</a></p>
+    </main>
+  </body>
+</html>
